@@ -84,13 +84,18 @@ if (ka.indexOf("kasperskylab_antibanner") !== -1)
 
 <p>Antivirus Avira, Norton, DrWeb, together with the installation of the system, for the chrome browser, install and even add-ons which are as of injectate to the page specific data which can be Oh detectit.</p>
 
-<p><strong>Dr.Web</strong>
-Product version DrWeb Security Space 11.0
-<img src="https://vah13.github.io/AVDetection/img/3.png" alt="dr.web version"></p>
+<h3>
+<a id="drweb" class="anchor" href="#drweb" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Dr.Web</strong>
+</h3>
+
+<p>Product version DrWeb Security Space 11.0</p>
+
+<p><img src="https://vah13.github.io/AVDetection/img/3.png" alt="dr.web version"></p>
 
 <p>Chrome extension name s - Dr.Web Anti-Virus Link Checker
-Extension URL
-<a href="https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb?hl=en-US">https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb?hl=en-US</a>
+Extension URL</p>
+
+<p><a href="https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb?hl=en-US">https://chrome.google.com/webstore/detail/drweb-anti-virus-link-che/aleggpabliehgbeagmfhnodcijcmbonb?hl=en-US</a>
 On the index.html page injected follow code </p>
 
 <p><img src="https://vah13.github.io/AVDetection/img/4.png" alt="dr.web_JS"></p>
@@ -105,13 +110,18 @@ if (document.getElementsByClassName('drweb_btn').length &gt; 0)
 &lt;/script&gt;
 </code></pre>
 
-<p><strong>Avira</strong>
-When installing Avira antivirus Pro, it installed 2 extensions in the Chrome browser
-Avira Browser Safety and Avira Save Search Plus
-<img src="https://vah13.github.io/AVDetection/img/5.png" alt="avira"></p>
+<h3>
+<a id="avira" class="anchor" href="#avira" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Avira</strong>
+</h3>
 
-<p>Avira on the page index.html injected iframe which has the following form
-<img src="https://vah13.github.io/AVDetection/img/6.png" alt="avira_JS"></p>
+<p>When installing Avira antivirus Pro, it installed 2 extensions in the Chrome browser
+Avira Browser Safety and Avira Save Search Plus</p>
+
+<p><img src="https://vah13.github.io/AVDetection/img/5.png" alt="avira"></p>
+
+<p>Avira on the page index.html injected iframe which has the following form</p>
+
+<p><img src="https://vah13.github.io/AVDetection/img/6.png" alt="avira_JS"></p>
 
 <p>and it turns out JS code for detect Avira extension is as follows</p>
 
@@ -127,13 +137,18 @@ AV.outerHTML.indexOf('/html/top.html')&gt;=0 &amp; AV.outerHTML.indexOf('chrome-
 }
 </code></pre>
 
-<p><strong>Norton</strong>
-And finally the last extension to AV which I had to consider - Norton
-He has installed, like Avira, 2 extension
-<img src="https://vah13.github.io/AVDetection/img/7.png" alt="norton"></p>
+<h3>
+<a id="norton" class="anchor" href="#norton" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Norton</strong>
+</h3>
 
-<p>JS code which is implemented by the extension on the page as follows
-<img src="https://vah13.github.io/AVDetection/img/8.png" alt="avira"></p>
+<p>And finally the last extension to AV which I had to consider - Norton
+He has installed, like Avira, 2 extension</p>
+
+<p><img src="https://vah13.github.io/AVDetection/img/7.png" alt="norton"></p>
+
+<p>JS code which is implemented by the extension on the page as follows</p>
+
+<p><img src="https://vah13.github.io/AVDetection/img/8.png" alt="avira"></p>
 
 <p>and in the end, it turned out that it is also very easy to detected using this JS code</p>
 
