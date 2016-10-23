@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AV detection</title>
+<meta name="author" content="@vah_13" />
+</head>
+<body>
+
+<iframe style="width:10px; height:10px; display:block; visibility:show" id="frmin" src="/iframe.html"></iframe>
+<button onclick="myFunction()">Check  AV</button>
+<script>
+function myFunction() {
+var frm = document.getElementById("frmin");
+
+ka = frm.contentDocument.getElementsByTagName('html')[0].outerHTML;
+if (ka.indexOf("kasperskylab_antibanner") !== -1)
+{
+	alert("AV name is Kaspersky");
+	return;
+}
+
+var AV = document.getElementById("abs-top-frame")
+if (AV!==null)
+{
+if ( AV.outerHTML.indexOf('/html/top.html')>=0 & AV.outerHTML.indexOf('chrome-extension://')>=0 )
+{
+	alert("AV name is Avira");
+  return;
+}
+}
+
+var NAV = document.getElementById('coFrameDiv');
+if ( NAV !== null)
+{
+	var nort = NAV.outerHTML;
+	if (nort.indexOf('coToolbarFrame')>=0 & nort.indexOf('/toolbar/placeholder.html')>=0 & nort.indexOf('chrome-extension://')>=0 )
+	{
+		alert("AV name is Norton");
+    return;
+	}
+}
+
+
+if (document.getElementsByClassName('drweb_btn').length > 0)
+{
+        alert("AV name is DrWeb");
+        return;
+}
+
+}
+
+</script>
+
+</body> 
+</html>
