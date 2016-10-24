@@ -7,13 +7,13 @@
 <body>
 
 <iframe style="width:10px; height:10px; display:block; visibility:show" id="frmin" src="/iframe.html"></iframe>
-<button onclick="myFunction()">Check  AV</button>
+<button onclick="checkAV()">Check  AV</button>
 <script>
-function myFunction() {
+function checkAV() {
 var frm = document.getElementById("frmin");
 
 ka = frm.contentDocument.getElementsByTagName('html')[0].outerHTML;
-if (ka.indexOf("kasperskylab_antibanner") !== -1)
+if ((ka.indexOf("kasperskylab_antibanner") !== -1) || (ka.indexOf("netdefender/hui/ndhui.js") !== -1))
 {
 	alert("AV name is Kaspersky");
 	return;
