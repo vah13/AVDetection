@@ -12,4 +12,4 @@ Thank you [@GrrrDog](https://github.com/GrrrDog) and [@antranigv](https://github
 
 
 
-[@vah_13](https://twitter.com/vah_13)
+[https://twitter.com/vah_13](https://twitter.com/vah_13)
